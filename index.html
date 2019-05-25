@@ -1,0 +1,229 @@
+<html>
+<title>
+task1
+<head>Author:AKASHgkr</head>
+</title>
+<body>
+<p><font color="blue"><h1>Stay Healthy</h1>
+<h3>Eat to live,not live to eat</h3></font></p>
+<p>From the left
+Tab 1: ...............</p>
+<div class="tabContainer">
+<div class="buttonContainer">
+<button class="tablinks" onclick="function('one')">Set your daily requirement</button>
+<button class="tablinks" onclick="function('two')">See Nutrients chart</button>
+<button class="tablinks" onclick="function('three')">Add your daily consumption</button>
+<button class="tablinks" onclick="function('four')">Track your consumption today</button>
+</div>
+<div class="tabcontent" id="one">
+<section>
+<label for="number">Enter your daily requirement</label>
+<input type="number" name="dailyreq" id="dailyreq">
+<button id="dailyreq.">Add dailyrequirement</button>
+</section>
+<section>
+<label for="number">Enter your Age</label>
+<input type="number" name="age" id="age">
+<button id="age.">Add age</button>
+</section>
+<section>
+<label for="number">Enter your Height(in cms)</label>
+<input type="number" name="height" id="height">
+<button id="height.">Add height</button>
+</section>
+<section>
+<label for="number">Enter your Weight(in Kgs)</label>
+<input type="number" name="weight" id="weight">
+<button id="weight.">Add weight</button>
+</section>
+</div>
+<div class="tabcontent" id="two">
+<section>
+<label for="text">Enter the food item</label>
+<input type="text" name="item" id="item">
+<button id="item.">Add item</button>
+</section>
+<section>
+<label for="number">Enter the carbohydrates</label>
+<input type="number" name="value" id="carb">
+<button id="carb.">Add</button>
+</section>
+<section>
+<label for="number">Enter the fat</label>
+<input type="number" name="value" id="fat">
+<button id="fat">Add</button>
+</section>
+<section>
+<label for="number">Enter the proteins</label>
+<input type="number" name="value" id="prot">
+<button id="prot.">Add</button>
+</section>
+<section>
+<label for="text">Enter the vitamins,minerals(in words only)</label>
+<input type="text" name="text" id="vit and min">
+<button id="vit and min." >Add</button>
+</section>
+<ul></ul>
+</div>
+<div class="tabcontent" id="three">
+<section>
+<label for="text">Enter the fooditem</label>
+<input type="text" name="item" id="food">
+<button id="food.">Add</button>
+</section>
+<section>
+<label for="number">Enter the No. of items</label>
+<input type="number" name="value" id="No">
+<button id="No." >Add</button>
+</section>
+<section>
+<label for="number">Enter the Calories</label>
+<input type="number" name="value" id="CV">
+<button id="CV.">Add</button>
+</section>
+<section>
+<label for="number">Enter the No. of litres of water you drank till now</label>
+<input type="number" name="value" id="litres">
+<button id="litres.">Add</button>
+<label for="number">Enter the time(in 24hr format,approximated to the nearby largest hour)</label>
+<input type="number" name="value" id="time">
+<button="time.">Add</button>
+</section>
+</div>
+<div class="tabcontent" id="four"></div>
+<script>
+function('one')
+{
+var buttonAddDailyRequirement=document.getElementById('dailyreq.');
+var inputDaliyReq=document.getElementById('dailyreq');
+var buttonAddAge=document.getElementById('age.');
+var inputAge=document.getElementById('age');
+var buttonAddHeight=document.getElementById('height.');
+var inputHeight=document.getElementById('height');
+var buttonAddWeight=document.getElementById('weight.');
+var inputWeight=document.getElementById('weight');
+var DailyReq,Age,Height,Weight;
+buttonDailyReq.onclick=fun11(){
+DailyReq=inputDailyReq.value;
+inputDailyReq.value='';}
+buttonAge.onclick=fun12(){
+Age=inputAge.value;
+inputAge.value='';}
+buttonHeight.onclick=fun13(){
+Height=inputHeight.value;
+inputHeight.value=";}
+buttonWeight.onclick=fun14(){
+Weight=inputWeight.value;
+inputWeight.value=";}
+Req=((Weight*4.5)+(Height*15.88)-(Age*5)-161;
+DailyReq=Req+0.4*Req;
+alert("Your daily requirement is $[DailyReq]");
+function('two')
+{
+var i=0;
+var fooditem[100],carbohydrates[100],fat[100],proteins[100],vitamins_and_minerals[100]
+var buttonAdd1=document.getElementById('item.');
+var input1=document.getElementById('item');
+var buttonAdd2=document.getElementById('carb.');
+var input2=document.getElementById('carb');
+var buttonAdd3=document.getElementById('fat.');
+var input3=document.getElementById('fat');
+var buttonAdd4=document.getElementById('prot.');
+var input4=document.getElementById('prot');
+var buttonAdd5=document.getElementById('vit and min.');
+var input5=document.getElementById('vit and min');
+buttonAdd1.onclick=fun21(){
+fooditem[i]=input1.value;
+input1.value='';display(fooditem[i]);
+}
+buttonAdd2.onclick=fun22(){
+carbohydrates[0]=input2.value;
+input2.value='';display(carbohydrates[i]);}
+buttonAdd3.onclick=fun23(){
+fat[0]=input3.value;
+input3.value='';display(fat[i]);}
+buttonAdd4.onclick=fun24(){
+proteins[0]=input4.value;
+input4.value='';display(proteins[i]);}
+buttonAdd5.onclick=fun25(){
+vitamins_and_minerals[0]=input5.value;
+input5.value='';display(vitamins_and_minerals[i]);
+i++;}
+var a;
+display(a)
+{
+var listItem=document.createElement('li');
+var listText=document.createElement('span');
+var listBtn=document.createElement('button')
+listItem.appendChild(listText);
+listText.textcontent=a;
+listItem.appendChild(listBtn);
+listBtn.textcontent='Delete';
+list.appendChild('listItem')
+}
+
+
+}
+function('three')
+{
+var buttonAdd11=document.getElementById('food.');
+var input11=document.getElementById('food');
+var buttonAdd12=document.getElementById('No.');
+var input12=document.getElementById('No');
+var buttonAdd13=document.getElementById('CV.');
+var input13=document.getElementById('CV');
+var buttonAdd14=document.getElementById('litres.');
+var input14=document.getElementById('litres');
+var buttonAdd15=document.getElementById('time.');
+var input15=document.getElementById('time');
+var food[100],number[100],CV[100],no.oflitres,time;
+buttonAdd11.onclick=fun21(){
+var i=0;
+food[i]=input11.value;
+input11.value='';
+i++;
+}
+buttonAdd12.onclick=fun22(){
+var j=0;
+number[i]=input12.value;
+input12.value='';
+j++;
+}
+buttonAdd13.onclick=fun23(){
+var k=0;
+CV[i]=input13.value;
+input11.value='';
+k++;
+}
+buttonAdd14.onclick=fun24(){
+no.oflitres=input14.value;
+input14.value='';
+}
+buttonAdd15.onclick=fun25(){
+time=input15.value;
+input15.value='';
+}
+var n,todayconsumption=0;
+for(n=0;n<i;n++)
+{
+todayconsumption=todayconsumption+(food[n]*number[n]*CV[n]);
+}
+}
+function('four')
+{
+{
+if(todayconsumption>=(0.8*dailyreq))
+{
+alert("You're reaching your daily calorie requirement");
+}
+if((no.oflitres<=1&&time>=8)||(no.oflitres<=2&&time>=16)||(no.oflitres<=3&&time>=24)
+{
+alert("Drink more water");
+}
+}
+</script>
+</body>
+</html>
+
+
+
